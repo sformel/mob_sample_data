@@ -1,0 +1,664 @@
+################################################################################
+# SCHEMA METADATA
+# Here is where we describe the metadata for the schema
+################################################################################
+
+id: https://example.org/umces
+name: data-sample
+title: UMCES Raw Pot Survey Data Schema
+description: |
+   LinkML schema for marine species survey data shared via Google Drive:
+   https://docs.google.com/spreadsheets/d/1yY2hdD4Hoh3hbieIyu9Lsm_nq7sKyC08
+license: TBD
+prefixes:
+  linkml: https://w3id.org/linkml/
+  umces: https://example.org/umces/
+  dwc: http://rs.tdwg.org/dwc/terms/
+default_prefix: umces
+imports:
+- linkml:types
+- linkml:units
+
+################################################################################
+# CLASSES - DATA TABLES
+# Here is where we define the classes, i.e. groupings of slots
+################################################################################
+
+classes:
+  Station:
+    description: Station tab in google sheet
+    close_mappings:
+    - dwc:Event
+    annotations:
+      dwc_target_class: Event
+      transformation_note: Station records map to Darwin Core Event core as point locations; parent deployment/recovery cruise events have footprintWKT
+    slots:
+    - datetime
+    - station
+    - cruise_id
+    - type
+    - depth
+    - wind_speed
+    - wind_dir
+    - wave_height
+    - cloud_cover_10th
+    - ropeless_id
+    - hobo_id
+    - surf_temp_f
+    - lon_start
+    - lat_start
+    - lon_end
+    - lat_end
+    - notes
+    - participants
+    - old_station
+  CPUE:
+    description: CPUE tab in google sheet
+    close_mappings:
+    - dwc:Occurrence
+    annotations:
+      dwc_target_class: Occurrence
+      transformation_note: CPUE records map to Darwin Core Occurrence extension
+    slots:
+    - Recover_date
+    - station
+    - Pot_position
+    - Pot_ID
+    - Near_Far
+    - Species
+    - Catch
+    - notes
+    - old_station
+  Measurements:
+    description: Measurements tab in google sheets
+    close_mappings:
+    - dwc:MeasurementOrFact
+    annotations:
+      dwc_target_class: MeasurementOrFact
+      transformation_note: Measurements pivot to long format for MeasurementOrFact extension
+    slots:
+    - Date
+    - station
+    - Near_Far
+    - Species
+    - TL_mm
+    - Wt_g_recorded
+    - scale_tare_g
+    - Wt_g
+    - Sex
+    - Retained
+    - Barotrauma
+    - notes
+    - old_station
+
+################################################################################
+# SLOTS - FIELD DEFINITIONS
+# Here is where we describe the column names from MOB data and conceptually 
+# map them to DwC
+################################################################################
+
+slots:
+  datetime:
+    description: Date for station visit
+    range: datetime
+    pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}
+    exact_mappings:
+      - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Direct mapping to eventDate
+    comments:
+      - Must be ISO-8601 formatted, like YYYY-mm-DDTHH:MM:SS TZ
+      - datetime could be confusing with the LinkML range type, datetime
+
+  station:
+    alias:
+      - Station
+    description: >-
+      Station identifier for ocean sampling locations. Format evolved over time:
+      - Pre-2024: Cruise-based (C####-#), grid coordinates, or A-series
+      - 2024+: USWind convention (U[Letter]-##)
+    range: string
+    pattern: "^(U[A-Z]-\\d{2}|C\\d{4}[-_]\\d(-\\d)?|[A-Z]\\d{1,2}|A-\\d-\\d)$"
+    examples:
+      - value: UM-15
+        description: Current USWind format (2024+)
+      - value: C2411-2
+        description: Cruise format from 2024 season
+      - value: L12
+        description: Grid coordinate format
+    comments:
+      - "MOB-developed naming convention for turbine sites; not reported after 2022-08-03 cruise"	
+      - "A/B/C - buildout zone"
+      - "first number: column from east to west"
+      - "second number: row from north to south"
+      - "Changed on 2022-08-15 after learning of USWind convention"
+      - "Changed in 2024 season after new USW convention"
+      - "Switched from using underscores to dashes after 2022-09-01, as the GPS does not read underscores"
+    exact_mappings:
+    - dwc:eventID
+    - dwc:locationID
+    annotations:
+      transformation_type: direct
+      transformation_note: Station identifier becomes both eventID and locationID
+
+  old_station:
+    description: >-
+        Legacy station identifier. Multiple naming conventions used:
+        - MOB turbine sites (discontinued after 2022-08-03)
+        - Early USWind convention with underscores (2022-08-15 to 2022-09-01)
+        - USWind convention with hyphens (2022-09-01 to 2024)
+        Note: Underscores avoided after 2022-09-01 due to GPS compatibility
+    range: string
+    pattern: "^(C\\d{4}[-_]\\d(-\\d)?|[A-Z]\\d{1,2}|A-\\d-\\d)$"
+    examples:
+          - value: C2206_1
+            description: Early format with underscore
+          - value: A-7-6
+            description: A-series format
+    comments:
+      - "MOB-developed naming convention for turbine sites; not reported after 2022-08-03 cruise"	
+      - "A/B/C - buildout zone"
+      - "first number: column from east to west"
+      - "second number: row from north to south"
+      - "Changed on 2022-08-15 after learning of USWind convention"
+      - "Changed in 2024 season after new USW convention"
+      - "Switched from using underscores to dashes after 2022-09-01, as the GPS does not read underscores"
+    alias:
+      - Old_Station
+
+  cruise_id:
+    description: Cruise identifier
+    range: string
+    pattern: "^\\d{4}(_\\d)?$"
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Cruise ID becomes MeasurementOrFact linked to parent cruise event
+    comments:
+      - "Appears to be in YYMM or YYMM_N format (year-month with optional cruise number). Pattern is based on this assumption."
+    examples:
+      - value: "2206"
+        description: June 2022 cruise
+      - value: "2306_2"
+        description: June 2023, second cruise
+      - value: "2410"
+        description: October 2024 cruise
+
+  type:
+    description: Event type (deploy or recover)
+    range: DeploymentType
+    exact_mappings:
+    - dwc:eventType
+    annotations:
+      transformation_type: direct
+      transformation_note: Type maps directly to eventType
+
+  depth:
+    description: Depth measurement
+    range: float
+    pattern: "^\\d+(\\.\\d)?$"
+    close_mappings:
+    - dwc:minimumDepthInMeters
+    - dwc:maximumDepthInMeters
+    annotations:
+      transformation_type: duplicate
+      transformation_note: Single depth value maps to both minimumDepthInMeters and maximumDepthInMeters after ensuring units are meters.
+    comments:
+      - units unknown
+      - pattern assumes positive number with an option to specify the tenths place.
+
+  wind_speed:
+    description: Wind speed measurement
+    range: string
+    pattern: "^(<\\d+|\\d+-\\d+|\\d+\\+?)$"
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wind speed becomes MeasurementOrFact linked to Station eventID
+    examples:
+      - value: "<5"
+        description: Less than 5
+      - value: "10-15"
+        description: 10 to 15 range
+      - value: "10+"
+        description: Greater than 10
+      - value: "12"
+        description: Exactly 12
+    comments:
+      - units unknown
+      - pattern allows values expressed as 'less than', a dashed 'range', or greater than, expressed with a '+'. See examples.
+
+  wind_dir:
+    description: Wind direction
+    range: CardinalDirection
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wind direction becomes MeasurementOrFact linked to Station eventID
+
+  wave_height:
+    description: Wave height measurement
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wave height becomes MeasurementOrFact linked to Station eventID
+    examples:
+      - value: "flat"
+        description: Flat/calm conditions
+      - value: "<2"
+        description: Less than 2
+      - value: "1-2"
+        description: 1 to 2 range
+      - value: "5.5"
+        description: 5.5
+      - value: "3"
+        description: 3
+    comments:
+      - units unknown
+    
+  cloud_cover_10th:
+    description: Cloud cover in ?
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Cloud cover becomes MeasurementOrFact linked to Station eventID
+    comments:
+      - Units unknown, appears to be standard scale of 0-10 with special exceptions.
+      - Special values used for conditions that prevent observation (smog, night)
+    examples:
+      - value: "5"
+        description: 5 tenths cloud cover
+      - value: "8-9"
+        description: 8 to 9 tenths range
+      - value: "0.5"
+        description: 0.5 tenths
+      - value: "smog"
+        description: Smog conditions
+      - value: "smog/2"
+        description: Smog with ?
+      - value: "night"
+        description: Nighttime (not observable)
+      - value: "sunrise"
+        description: Sunrise conditions
+
+  ropeless_id:
+    description: Ropeless gear identifier
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Ropeless gear ID becomes MeasurementOrFact linked to Station eventID
+    comments: 
+      - unsure what possible values might exist
+
+  hobo_id:
+    description: HOBO data logger identifier
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: HOBO logger ID becomes MeasurementOrFact linked to Station eventID
+    comments:
+      - assuming this is a data logger
+
+  surf_temp_f:
+    description: Surface temperature in Fahrenheit
+    range: float
+    pattern: "^(2[6-9]|[3-9]\\d|1\\d{2})(\\.\\d+)?$"
+    minimum_value: 30
+    maximum_value: 110
+    unit:
+      ucum_code: "[degF]"
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Surface temperature becomes MeasurementOrFact linked to Station eventID
+    comments:
+      - pattern assumes number between 30 - 110 with an option to specify the tenths place.
+
+  lon_start:
+    description: Start longitude coordinate
+    range: float
+    minimum_value: -180
+    maximum_value: 180
+    exact_mappings:
+    - dwc:decimalLongitude
+    annotations:
+      transformation_type: direct
+      transformation_note: Start longitude maps to decimalLongitude for Event; also used in footprintWKT
+    comments:
+      - assuming these are decimal degrees in WGS84
+
+  lat_start:
+    description: Start latitude coordinate
+    range: float
+    minimum_value: -90
+    maximum_value: 90
+    exact_mappings:
+    - dwc:decimalLatitude
+    annotations:
+      transformation_type: direct
+      transformation_note: Start latitude maps to decimalLatitude for Event; also used in footprintWKT
+    comments:
+      - assuming these are decimal degrees in WGS84
+
+  lon_end:
+    description: End longitude coordinate
+    range: float
+    minimum_value: -180
+    maximum_value: 180
+    related_mappings:
+    - dwc:footprintWKT
+    annotations:
+      transformation_type: construct_wkt
+      transformation_note: End longitude used in footprintWKT LINESTRING construction for parent cruise events
+    comments:
+      - assuming these are decimal degrees in WGS84
+
+  lat_end:
+    description: End latitude coordinate
+    range: float
+    minimum_value: -90
+    maximum_value: 90
+    related_mappings:
+    - dwc:footprintWKT
+    annotations:
+      transformation_type: construct_wkt
+      transformation_note: End latitude used in footprintWKT LINESTRING construction for parent cruise events
+    comments:
+      - assuming these are decimal degrees in WGS84
+
+  notes:
+    description: Notes or remarks
+    range: string
+    close_mappings:
+    - dwc:eventRemarks
+    - dwc:occurrenceRemarks
+    annotations:
+      transformation_type: context_dependent
+      transformation_note: Maps to eventRemarks in Station/Event context, occurrenceRemarks in CPUE/Occurrence context
+    alias:
+      - Notes
+
+  participants:
+    description: Participants. Crew members present during sampling (comma-separated).
+    range: participantEnum
+    multivalued: true
+    exact_mappings:
+    - dwc:recordedBy
+    annotations:
+      transformation_type: direct
+      transformation_note: Participant initials map to recordedBy
+    comments:
+      - inclusion of 'multivalued' alllows for the comma separation 
+
+  Recover_date:
+    description: Date (recovery of Pot?)
+    range: datetime
+    pattern: ^\d{4}-\d{2}-\d{2}
+    exact_mappings:
+    - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Recovery date maps to eventDate for Occurrence records
+    comments:
+      - Must be ISO-8601 formatted, like YYYY-mm-DD
+
+  Pot_position:
+    description: Pot position in string (1-15)
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pot position becomes MeasurementOrFact linked to Station or Pot eventID
+    
+  Pot_ID:
+    description: Pot/trap identifier
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pot ID becomes MeasurementOrFact; also used in eventID construction
+  
+  Near_Far:
+    description: Position relative to reference point (near/far)
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Distance category becomes MeasurementOrFact
+    alias:
+      - "Near/Far"
+
+  Species:
+    description: Species name
+    range: string
+    close_mappings:
+    - dwc:vernacularName
+    related_mappings:
+    - dwc:scientificName
+    annotations:
+      transformation_type: direct
+      transformation_note: Common name maps to vernacularName; scientificName should be looked up from taxonomy
+    comments:
+      - not clear what values are permissible or where they're defined
+  
+  Catch:
+    description: Catch count
+    range: integer
+    exact_mappings:
+    - dwc:individualCount
+    annotations:
+      transformation_type: direct
+      transformation_note: Catch count maps directly to individualCount
+    comments:
+      - "TODO: Clarify meaning of NA values - could indicate: no catch (0), not recorded, or not applicable"
+   
+  Date:
+    description: Date of animal measurements
+    range: datetime
+    pattern: ^\d{4}-\d{2}-\d{2}
+    exact_mappings:
+    - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Measurement date - used to link to parent Event
+    alias:
+      - Date
+    comments:
+      - Must be ISO-8601 formatted, like YYYY-mm-DD
+
+  TL_mm:
+    description: Length measurement (Total length?)
+    range: integer
+    unit:
+      ucum_code: mm
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pivot to MeasurementOrFact with measurementType='total length', measurementValue=TL_mm, measurementUnit='mm'
+    comments:
+      - not clear what measurement method is
+
+  Wt_g_recorded:
+    description: Weight measurement (recorded)
+    range: integer
+    unit:
+      ucum_code: g
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Recorded weight - may differ from calculated weight, can be separate MeasurementOrFact
+    comments:
+      - not clear what NA values signify
+ 
+  scale_tare_g:
+    description: Tare weight for scale
+    range: integer
+    unit:
+      ucum_code: g
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Tare weight for scale - can be MeasurementOrFact or omitted
+    comments: 
+      - "Switch from spring scale to self-taring scale from 2308 cruise on"
+
+  Wt_g:
+    description: Weight measurement (calculated)
+    range: integer
+    unit:
+      ucum_code: g
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Calculated weight - pivot to MeasurementOrFact
+    comments:
+      - not clear what NA values signify
+ 
+  Sex:
+    description: Sex of organism
+    range: SexEnum
+    exact_mappings:
+    - dwc:sex
+    annotations:
+      transformation_type: direct
+      transformation_note: Sex maps directly to dwc:sex
+
+  Retained:
+    description: Whether specimen was retained
+    range: RetainedEnum
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Retained status becomes MeasurementOrFact with measurementType='retained'
+
+  Barotrauma:
+    description: Barotrauma observation
+    range: string
+    related_mappings:
+    - dwc:occurrenceRemarks
+    annotations:
+      transformation_type: append
+      transformation_note: Barotrauma observation should be appended to occurrenceRemarks
+    comments:
+      - "Barotrauma started being recorded on the 2306 cruise, as some fish with everted stomachs would have false-empty stomachs"
+
+################################################################################
+# ENUMS - CONTROLLED VOCABULARIES
+# Here is where we define the enums (factor levels) that are needed
+################################################################################
+
+enums:
+  CardinalDirection:
+    permissible_values:
+      N:
+        description: North
+      S:
+        description: South
+      E:
+        description: East
+      W:
+        description: West
+      NE:
+        description: Northeast
+      NW:
+        description: Northwest
+      SE:
+        description: Southeast
+      SW:
+        description: Southwest
+  SexEnum:
+    permissible_values:
+      F:
+        description: Female
+      M:
+        description: Male
+
+  participantEnum:
+    description: Personnel involved in ocean sampling operations
+    permissible_values:
+      DS:
+        description: Dave Secor
+        title: Dave Secor
+      MOB:
+        description: Mike O'Brien
+        title: Mike O'Brien
+      KS:
+        description: Kirsten Silva
+        title: Kirsten Silva
+      EK:
+        description: Evan Kostelecky
+        title: Evan Kostelecky
+      LR:
+        description: Lauren Rodriguez
+        title: Lauren Rodriguez
+      KH:
+        description: Kerry Harrington
+        title: Kerry Harrington
+      BH:
+        description: Brandon Harrington
+        title: Brandon Harrington
+      Jm:
+        description: Jeff (mate)
+        title: Jeff (mate)
+      Rm:
+        description: Reilly (mate)
+        title: Reilly (mate)
+      Lm:
+        description: Lucas (mate)
+        title: Lucas (mate)
+      Wm:
+        description: Will (mate)
+        title: Will (mate)
+      ENm:
+        description: Ethan N (mate)
+        title: Ethan N (mate)
+      Cm:
+        description: Conor (mate)
+        title: Conor (mate)
+      KB:
+        description: KB (mate/captain)
+        title: KB (mate/captain)
+      RA:
+        description: Reece Aponte (VIMS)
+        title: Reece Aponte (VIMS)
+
+  DeploymentType:
+    description: Type of sampling event - deployment or recovery of gear
+    permissible_values:
+      deploy:
+        description: Deployment of sampling gear
+        title: Deploy
+      recover:
+        description: Recovery of sampling gear
+        title: Recover
+  
+  RetainedEnum:
+    description: Whether specimen was retained
+    permissible_values:
+      Y:
+        description: Yes, specimen was retained
+        title: Yes
+      N:
+        description: No, specimen was not retained
+        title: No

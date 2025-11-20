@@ -1,0 +1,968 @@
+occurrenceID,measurementType,measurementValue,measurementUnit,measurementUnitID,eventID
+MEAS_C2404-1_black sea bass_1,total length,251,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_1,weight (recorded),275,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_1,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_1,weight,275,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_1,retained,Y,,,
+MEAS_C2404-1_black sea bass_2,total length,291,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_2,weight (recorded),295,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_2,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_2,weight,295,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_2,retained,Y,,,
+MEAS_C2404-1_black sea bass_3,total length,200,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_3,weight (recorded),165,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_3,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_3,weight,165,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_3,retained,Y,,,
+MEAS_C2404-1_black sea bass_4,total length,211,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_4,weight (recorded),170,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_4,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_4,weight,170,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_4,retained,Y,,,
+MEAS_C2404-1_black sea bass_5,total length,214,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_5,weight (recorded),165,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_5,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_5,weight,165,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_5,retained,Y,,,
+MEAS_C2404-1_black sea bass_6,total length,262,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_6,weight (recorded),305,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_6,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_6,weight,305,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_6,retained,N,,,
+MEAS_C2404-1_black sea bass_7,total length,223,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_7,weight (recorded),130,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_7,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_7,weight,130,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_7,retained,N,,,
+MEAS_C2404-1_black sea bass_8,total length,222,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_8,weight (recorded),205,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_8,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_8,weight,205,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_8,retained,N,,,
+MEAS_C2404-1_black sea bass_9,total length,183,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_9,weight (recorded),125,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_9,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_9,weight,125,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_9,retained,N,,,
+MEAS_C2404-1_black sea bass_10,total length,371,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_10,weight (recorded),615,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_10,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_10,weight,615,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_10,retained,Y,,,
+MEAS_C2404-1_black sea bass_11,total length,272,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_11,weight (recorded),345,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_11,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_11,weight,345,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_11,retained,Y,,,
+MEAS_C2404-1_black sea bass_12,total length,182,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-1_black sea bass_12,weight (recorded),90,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_12,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_12,weight,90,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-1_black sea bass_12,retained,Y,,,
+MEAS_C2404-2_black sea bass_13,total length,241,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_13,weight (recorded),210,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_13,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_13,weight,210,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_13,retained,Y,,,
+MEAS_C2404-2_black sea bass_14,total length,190,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_14,weight (recorded),180,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_14,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_14,weight,180,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_14,retained,Y,,,
+MEAS_C2404-2_black sea bass_15,total length,191,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_15,weight (recorded),145,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_15,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_15,weight,145,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_15,retained,Y,,,
+MEAS_C2404-2_black sea bass_16,total length,381,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_16,weight (recorded),680,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_16,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_16,weight,680,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_16,retained,Y,,,
+MEAS_C2404-2_black sea bass_17,total length,221,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_17,weight (recorded),190,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_17,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_17,weight,190,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_17,retained,Y,,,
+MEAS_C2404-2_black sea bass_18,total length,280,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_18,weight (recorded),275,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_18,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_18,weight,275,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_18,retained,N,,,
+MEAS_C2404-2_black sea bass_19,total length,184,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_19,weight (recorded),125,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_19,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_19,weight,125,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_19,retained,N,,,
+MEAS_C2404-2_black sea bass_20,total length,215,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_20,weight (recorded),145,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_20,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_20,weight,145,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_20,retained,N,,,
+MEAS_C2404-2_black sea bass_21,total length,236,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_21,weight (recorded),185,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_21,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_21,weight,185,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_21,retained,Y,,,
+MEAS_C2404-2_black sea bass_22,total length,268,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_22,weight (recorded),245,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_22,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_22,weight,245,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_22,retained,Y,,,
+MEAS_C2404-2_black sea bass_23,total length,312,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_23,weight (recorded),355,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_23,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_23,weight,355,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_23,retained,Y,,,
+MEAS_C2404-2_black sea bass_24,total length,281,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_24,weight (recorded),295,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_24,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_24,weight,295,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_24,retained,Y,,,
+MEAS_C2404-2_black sea bass_25,total length,190,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_25,weight (recorded),85,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_25,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_25,weight,85,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_25,retained,Y,,,
+MEAS_C2404-2_black sea bass_26,total length,286,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_26,weight (recorded),290,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_26,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_26,weight,290,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_26,retained,N,,,
+MEAS_C2404-2_black sea bass_27,total length,299,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_27,weight (recorded),120,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_27,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_27,weight,120,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_27,retained,N,,,
+MEAS_C2404-2_black sea bass_28,total length,196,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_28,weight (recorded),115,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_28,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_28,weight,115,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_28,retained,N,,,
+MEAS_C2404-2_black sea bass_29,total length,202,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_29,weight (recorded),150,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_29,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_29,weight,150,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_29,retained,N,,,
+MEAS_C2404-2_black sea bass_30,total length,219,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_30,weight (recorded),225,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_30,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_30,weight,225,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_30,retained,N,,,
+MEAS_C2404-2_black sea bass_31,total length,177,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_31,weight (recorded),105,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_31,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_31,weight,105,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_31,retained,N,,,
+MEAS_C2404-2_black sea bass_32,total length,192,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_C2404-2_black sea bass_32,weight (recorded),185,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_32,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_32,weight,185,g,http://qudt.org/vocab/unit/GM,
+MEAS_C2404-2_black sea bass_32,retained,N,,,
+MEAS_UM-15_black sea bass_33,total length,264,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_33,weight (recorded),255,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_33,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_33,weight,255,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_33,retained,Y,,,
+MEAS_UM-15_black sea bass_34,total length,227,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_34,weight (recorded),115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_34,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_34,weight,115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_34,retained,Y,,,
+MEAS_UM-15_black sea bass_35,total length,293,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_35,weight (recorded),300,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_35,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_35,weight,300,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_35,retained,Y,,,
+MEAS_UM-15_black sea bass_36,total length,201,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_36,weight (recorded),110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_36,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_36,weight,110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_36,retained,Y,,,
+MEAS_UM-15_black sea bass_37,total length,215,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_37,weight (recorded),125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_37,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_37,weight,125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_37,retained,Y,,,
+MEAS_UM-15_black sea bass_38,total length,324,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_38,weight (recorded),410,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_38,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_38,weight,410,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_38,retained,N,,,
+MEAS_UM-15_black sea bass_39,total length,253,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_39,weight (recorded),170,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_39,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_39,weight,170,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_39,retained,Y,,,
+MEAS_UM-15_black sea bass_40,total length,202,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_40,weight (recorded),155,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_40,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_40,weight,155,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_40,retained,Y,,,
+MEAS_UM-15_black sea bass_41,total length,379,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_41,weight (recorded),715,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_41,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_41,weight,715,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_41,retained,Y,,,
+MEAS_UM-15_black sea bass_42,total length,245,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_42,weight (recorded),190,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_42,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_42,weight,190,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_42,retained,Y,,,
+MEAS_UM-15_black sea bass_43,total length,202,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_43,weight (recorded),120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_43,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_43,weight,120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_43,retained,Y,,,
+MEAS_UM-15_black sea bass_44,total length,306,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_44,weight (recorded),385,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_44,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_44,weight,385,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_44,retained,N,,,
+MEAS_UM-15_black sea bass_45,total length,296,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_45,weight (recorded),370,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_45,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_45,weight,370,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_45,retained,N,,,
+MEAS_UM-15_black sea bass_46,total length,212,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_46,weight (recorded),165,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_46,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_46,weight,165,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_46,retained,N,,,
+MEAS_UM-15_black sea bass_47,total length,205,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_47,weight (recorded),160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_47,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_47,weight,160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_47,retained,N,,,
+MEAS_UM-15_black sea bass_48,total length,239,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_48,weight (recorded),205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_48,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_48,weight,205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_48,retained,N,,,
+MEAS_UM-15_black sea bass_49,total length,225,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_49,weight (recorded),250,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_49,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_49,weight,250,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_49,retained,N,,,
+MEAS_UM-15_black sea bass_50,total length,208,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_50,weight (recorded),105,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_50,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_50,weight,105,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_50,retained,N,,,
+MEAS_UM-15_black sea bass_51,total length,206,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-15_black sea bass_51,weight (recorded),100,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_51,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_51,weight,100,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-15_black sea bass_51,retained,N,,,
+MEAS_UM-12_black sea bass_52,total length,213,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_52,weight (recorded),75,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_52,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_52,weight,75,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_52,retained,Y,,,
+MEAS_UM-12_black sea bass_53,total length,195,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_53,weight (recorded),115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_53,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_53,weight,115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_53,retained,Y,,,
+MEAS_UM-12_black sea bass_54,total length,197,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_54,weight (recorded),115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_54,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_54,weight,115,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_54,retained,Y,,,
+MEAS_UM-12_black sea bass_55,total length,226,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_55,weight (recorded),160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_55,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_55,weight,160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_55,retained,Y,,,
+MEAS_UM-12_black sea bass_56,total length,190,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_56,weight (recorded),120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_56,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_56,weight,120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_56,retained,Y,,,
+MEAS_UM-12_black sea bass_57,total length,198,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_57,weight (recorded),135,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_57,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_57,weight,135,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_57,retained,N,,,
+MEAS_UM-12_black sea bass_58,total length,220,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_58,weight (recorded),200,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_58,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_58,weight,200,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_58,retained,N,,,
+MEAS_UM-12_black sea bass_59,total length,395,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_59,weight (recorded),665,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_59,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_59,weight,665,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_59,retained,Y,,,
+MEAS_UM-12_black sea bass_60,total length,327,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_60,weight (recorded),465,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_60,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_60,weight,465,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_60,retained,Y,,,
+MEAS_UM-12_black sea bass_61,total length,254,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_61,weight (recorded),210,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_61,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_61,weight,210,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_61,retained,Y,,,
+MEAS_UM-12_black sea bass_62,total length,195,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_62,weight (recorded),110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_62,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_62,weight,110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_62,retained,Y,,,
+MEAS_UM-12_black sea bass_63,total length,175,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_63,weight (recorded),125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_63,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_63,weight,125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_63,retained,Y,,,
+MEAS_UM-12_black sea bass_64,total length,203,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_64,weight (recorded),200,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_64,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_64,weight,200,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_64,retained,N,,,
+MEAS_UM-12_black sea bass_65,total length,189,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UM-12_black sea bass_65,weight (recorded),110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_65,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_65,weight,110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UM-12_black sea bass_65,retained,N,,,
+MEAS_UJ-11_black sea bass_66,total length,251,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_66,weight (recorded),205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_66,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_66,weight,205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_66,retained,Y,,,
+MEAS_UJ-11_black sea bass_67,total length,201,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_67,weight (recorded),170,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_67,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_67,weight,170,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_67,retained,Y,,,
+MEAS_UJ-11_black sea bass_68,total length,195,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_68,weight (recorded),145,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_68,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_68,weight,145,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_68,retained,Y,,,
+MEAS_UJ-11_scup_69,total length,200,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_scup_69,weight (recorded),175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_scup_69,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_scup_69,weight,175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_scup_69,retained,N,,,
+MEAS_UJ-11_black sea bass_70,total length,221,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_70,weight (recorded),205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_70,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_70,weight,205,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_70,retained,Y,,,
+MEAS_UJ-11_black sea bass_71,total length,203,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_71,weight (recorded),130,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_71,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_71,weight,130,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_71,retained,Y,,,
+MEAS_UJ-11_black sea bass_72,total length,246,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_72,weight (recorded),235,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_72,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_72,weight,235,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_72,retained,Y,,,
+MEAS_UJ-11_black sea bass_73,total length,311,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_73,weight (recorded),375,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_73,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_73,weight,375,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_73,retained,Y,,,
+MEAS_UJ-11_black sea bass_74,total length,228,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_74,weight (recorded),175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_74,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_74,weight,175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_74,retained,Y,,,
+MEAS_UJ-11_black sea bass_75,total length,200,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_75,weight (recorded),130,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_75,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_75,weight,130,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_75,retained,N,,,
+MEAS_UJ-11_black sea bass_76,total length,178,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UJ-11_black sea bass_76,weight (recorded),120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_76,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_76,weight,120,g,http://qudt.org/vocab/unit/GM,
+MEAS_UJ-11_black sea bass_76,retained,N,,,
+MEAS_UH-11_black sea bass_77,total length,233,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_77,weight (recorded),175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_77,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_77,weight,175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_77,retained,Y,,,
+MEAS_UH-11_black sea bass_78,total length,204,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_78,weight (recorded),140,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_78,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_78,weight,140,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_78,retained,Y,,,
+MEAS_UH-11_black sea bass_79,total length,300,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_79,weight (recorded),430,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_79,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_79,weight,430,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_79,retained,Y,,,
+MEAS_UH-11_black sea bass_80,total length,245,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_80,weight (recorded),210,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_80,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_80,weight,210,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_80,retained,Y,,,
+MEAS_UH-11_black sea bass_81,total length,257,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_81,weight (recorded),235,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_81,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_81,weight,235,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_81,retained,Y,,,
+MEAS_UH-11_black sea bass_82,total length,295,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_82,weight (recorded),310,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_82,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_82,weight,310,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_82,retained,N,,,
+MEAS_UH-11_black sea bass_83,total length,214,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_83,weight (recorded),160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_83,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_83,weight,160,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_83,retained,N,,,
+MEAS_UH-11_black sea bass_84,total length,384,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_84,weight (recorded),585,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_84,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_84,weight,585,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_84,retained,Y,,,
+MEAS_UH-11_black sea bass_85,total length,245,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_85,weight (recorded),225,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_85,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_85,weight,225,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_85,retained,Y,,,
+MEAS_UH-11_black sea bass_86,total length,247,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_86,weight (recorded),250,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_86,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_86,weight,250,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_86,retained,Y,,,
+MEAS_UH-11_black sea bass_87,total length,190,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_87,weight (recorded),125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_87,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_87,weight,125,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_87,retained,Y,,,
+MEAS_UH-11_black sea bass_88,total length,196,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_88,weight (recorded),110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_88,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_88,weight,110,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_88,retained,Y,,,
+MEAS_UH-11_black sea bass_89,total length,234,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_89,weight (recorded),175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_89,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_89,weight,175,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_89,retained,N,,,
+MEAS_UH-11_black sea bass_90,total length,294,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_90,weight (recorded),360,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_90,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_90,weight,360,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_90,retained,N,,,
+MEAS_UH-11_black sea bass_91,total length,287,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_91,weight (recorded),230,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_91,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_91,weight,230,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_91,retained,N,,,
+MEAS_UH-11_black sea bass_92,total length,207,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_92,weight (recorded),135,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_92,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_92,weight,135,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_92,retained,N,,,
+MEAS_UH-11_black sea bass_93,total length,246,mm,http://qudt.org/vocab/unit/MilliM,
+MEAS_UH-11_black sea bass_93,weight (recorded),340,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_93,scale tare weight,0,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_93,weight,340,g,http://qudt.org/vocab/unit/GM,
+MEAS_UH-11_black sea bass_93,retained,N,,,
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,C2404-1
+,wind direction,SW,,,C2404-1
+,wave height,2024-02-04 00:00:00,,,C2404-1
+,cloud cover,5,tenths,,C2404-1
+,ropeless gear ID,BCB,,,C2404-1
+,cruise ID,2404,,,C2404-1
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,C2404-2
+,wind direction,SW,,,C2404-2
+,wave height,2024-02-04 00:00:00,,,C2404-2
+,cloud cover,5,tenths,,C2404-2
+,ropeless gear ID,337,,,C2404-2
+,cruise ID,2404,,,C2404-2
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,UM-15
+,wind direction,SW,,,UM-15
+,wave height,2024-02-04 00:00:00,,,UM-15
+,cloud cover,5,tenths,,UM-15
+,ropeless gear ID,355,,,UM-15
+,cruise ID,2404,,,UM-15
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,UM-12
+,wind direction,SW,,,UM-12
+,wave height,2024-02-04 00:00:00,,,UM-12
+,cloud cover,5,tenths,,UM-12
+,ropeless gear ID,BCA,,,UM-12
+,cruise ID,2404,,,UM-12
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,UJ-11
+,wind direction,SW,,,UJ-11
+,wave height,2024-01-03 00:00:00,,,UJ-11
+,cloud cover,5,tenths,,UJ-11
+,ropeless gear ID,335,,,UJ-11
+,cruise ID,2404,,,UJ-11
+,wind speed,2024-05-10 00:00:00,kn,http://qudt.org/vocab/unit/KN,UH-11
+,wind direction,SW,,,UH-11
+,wave height,2024-01-03 00:00:00,,,UH-11
+,cloud cover,5,tenths,,UH-11
+,ropeless gear ID,3CD,,,UH-11
+,cruise ID,2404,,,UH-11
+,wave height,3,,,C2404-1
+,cloud cover,4,tenths,,C2404-1
+,ropeless gear ID,BCB,,,C2404-1
+,cruise ID,2404,,,C2404-1
+,wave height,2024-02-03 00:00:00,,,C2404-2
+,cloud cover,4,tenths,,C2404-2
+,ropeless gear ID,337,,,C2404-2
+,cruise ID,2404,,,C2404-2
+,wave height,3,,,UM-15
+,cloud cover,8,tenths,,UM-15
+,ropeless gear ID,355,,,UM-15
+,cruise ID,2404,,,UM-15
+,wave height,3,,,UM-12
+,cloud cover,8,tenths,,UM-12
+,ropeless gear ID,BCA,,,UM-12
+,cruise ID,2404,,,UM-12
+,wave height,3,,,UJ-11
+,cloud cover,8,tenths,,UJ-11
+,ropeless gear ID,335,,,UJ-11
+,cruise ID,2404,,,UJ-11
+,wave height,3,,,UH-11
+,cloud cover,8,tenths,,UH-11
+,ropeless gear ID,3CD,,,UH-11
+,cruise ID,2404,,,UH-11
+,pot position,15,,,C2404-1
+,pot ID,36.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,15,,,C2404-1
+,pot ID,36.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,14,,,C2404-1
+,pot ID,80.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,13,,,C2404-1
+,pot ID,30.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,13,,,C2404-1
+,pot ID,30.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,13,,,C2404-1
+,pot ID,30.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,12,,,C2404-1
+,pot ID,29.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,12,,,C2404-1
+,pot ID,29.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,12,,,C2404-1
+,pot ID,29.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,11,,,C2404-1
+,pot ID,22.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,11,,,C2404-1
+,pot ID,22.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,10,,,C2404-1
+,pot ID,37.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,9,,,C2404-1
+,pot ID,74.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,8,,,C2404-1
+,pot ID,93.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,8,,,C2404-1
+,pot ID,93.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,7,,,C2404-1
+,pot ID,24.0,,,C2404-1
+,distance category,far,,,C2404-1
+,pot position,6,,,C2404-1
+,pot ID,42.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,5,,,C2404-1
+,pot ID,18.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,4,,,C2404-1
+,pot ID,43.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,3,,,C2404-1
+,pot ID,89.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,3,,,C2404-1
+,pot ID,89.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,3,,,C2404-1
+,pot ID,89.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,2,,,C2404-1
+,pot ID,10.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,1,,,C2404-1
+,pot ID,21.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,1,,,C2404-1
+,pot ID,21.0,,,C2404-1
+,distance category,near,,,C2404-1
+,pot position,15,,,C2404-2
+,pot ID,41.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,14,,,C2404-2
+,pot ID,65.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,13,,,C2404-2
+,pot ID,99.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,12,,,C2404-2
+,pot ID,45.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,11,,,C2404-2
+,pot ID,82.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,10,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,9,,,C2404-2
+,pot ID,86.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,9,,,C2404-2
+,pot ID,86.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,8,,,C2404-2
+,pot ID,98.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,7,,,C2404-2
+,pot ID,16.0,,,C2404-2
+,distance category,far,,,C2404-2
+,pot position,6,,,C2404-2
+,pot ID,97.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,5,,,C2404-2
+,pot ID,100.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,5,,,C2404-2
+,pot ID,100.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,4,,,C2404-2
+,pot ID,96.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,4,,,C2404-2
+,pot ID,96.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,3,,,C2404-2
+,pot ID,95.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,2,,,C2404-2
+,pot ID,3.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,2,,,C2404-2
+,pot ID,3.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,1,,,C2404-2
+,pot ID,90.0,,,C2404-2
+,distance category,near,,,C2404-2
+,pot position,15,,,UM-15
+,pot ID,50.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,15,,,UM-15
+,pot ID,50.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,14,,,UM-15
+,pot ID,35.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,13,,,UM-15
+,pot ID,47.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,12,,,UM-15
+,pot ID,8.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,11,,,UM-15
+,pot ID,17.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,11,,,UM-15
+,pot ID,17.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,10,,,UM-15
+,pot ID,63.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,9,,,UM-15
+,pot ID,14.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,9,,,UM-15
+,pot ID,14.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,8,,,UM-15
+,pot ID,71.0,,,UM-15
+,distance category,far,,,UM-15
+,pot position,7,,,UM-15
+,distance category,far,,,UM-15
+,pot position,6,,,UM-15
+,pot ID,105.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,5,,,UM-15
+,pot ID,78.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,4,,,UM-15
+,pot ID,44.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,3,,,UM-15
+,pot ID,54.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,2,,,UM-15
+,pot ID,40.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,2,,,UM-15
+,pot ID,40.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,1,,,UM-15
+,pot ID,20.0,,,UM-15
+,distance category,near,,,UM-15
+,pot position,15,,,UM-12
+,pot ID,31.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,14,,,UM-12
+,pot ID,85.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,13,,,UM-12
+,pot ID,101.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,12,,,UM-12
+,pot ID,92.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,12,,,UM-12
+,pot ID,92.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,11,,,UM-12
+,pot ID,62.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,11,,,UM-12
+,pot ID,62.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,10,,,UM-12
+,pot ID,2.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,9,,,UM-12
+,pot ID,64.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,9,,,UM-12
+,pot ID,64.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,8,,,UM-12
+,pot ID,94.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,7,,,UM-12
+,pot ID,46.0,,,UM-12
+,distance category,far,,,UM-12
+,pot position,6,,,UM-12
+,pot ID,6.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,5,,,UM-12
+,pot ID,25.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,4,,,UM-12
+,pot ID,31.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,3,,,UM-12
+,pot ID,57.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,2,,,UM-12
+,pot ID,53.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,1,,,UM-12
+,pot ID,48.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,1,,,UM-12
+,pot ID,48.0,,,UM-12
+,distance category,near,,,UM-12
+,pot position,15,,,UJ-11
+,pot ID,59.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,14,,,UJ-11
+,pot ID,7.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,13,,,UJ-11
+,pot ID,87.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,12,,,UJ-11
+,pot ID,4.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,12,,,UJ-11
+,pot ID,4.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,11,,,UJ-11
+,pot ID,88.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,10,,,UJ-11
+,pot ID,84.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,9,,,UJ-11
+,pot ID,77.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,8,,,UJ-11
+,pot ID,9.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,7,,,UJ-11
+,pot ID,49.0,,,UJ-11
+,distance category,far,,,UJ-11
+,pot position,6,,,UJ-11
+,pot ID,26.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,5,,,UJ-11
+,pot ID,75.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,4,,,UJ-11
+,pot ID,34.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,3,,,UJ-11
+,pot ID,68.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,2,,,UJ-11
+,pot ID,15.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,1,,,UJ-11
+,pot ID,5.0,,,UJ-11
+,distance category,near,,,UJ-11
+,pot position,15,,,UH-11
+,pot ID,69.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,14,,,UH-11
+,pot ID,56.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,13,,,UH-11
+,pot ID,57.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,12,,,UH-11
+,pot ID,52.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,11,,,UH-11
+,pot ID,58.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,10,,,UH-11
+,pot ID,12.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,9,,,UH-11
+,pot ID,72.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,8,,,UH-11
+,pot ID,38.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,8,,,UH-11
+,pot ID,38.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,7,,,UH-11
+,pot ID,79.0,,,UH-11
+,distance category,far,,,UH-11
+,pot position,6,,,UH-11
+,pot ID,81.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,5,,,UH-11
+,pot ID,19.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,4,,,UH-11
+,pot ID,76.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,4,,,UH-11
+,pot ID,76.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,3,,,UH-11
+,pot ID,91.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,3,,,UH-11
+,pot ID,91.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,2,,,UH-11
+,pot ID,1.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,1,,,UH-11
+,pot ID,27.0,,,UH-11
+,distance category,near,,,UH-11
+,pot position,1,,,UH-11
+,pot ID,27.0,,,UH-11
+,distance category,near,,,UH-11
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,far,,,C2404-1
+,distance category,near,,,C2404-1
+,distance category,near,,,C2404-1
+,distance category,near,,,C2404-1
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,near,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,far,,,C2404-2
+,distance category,near,,,UM-15
+,distance category,near,,,UM-15
+,distance category,near,,,UM-15
+,distance category,near,,,UM-15
+,distance category,near,,,UM-15
+,distance category,near,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-15
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,far,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,near,,,UM-12
+,distance category,far,,,UJ-11
+,distance category,far,,,UJ-11
+,distance category,far,,,UJ-11
+,distance category,far,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,near,,,UJ-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,far,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11
+,distance category,near,,,UH-11

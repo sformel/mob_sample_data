@@ -1,0 +1,471 @@
+################################################################################
+# SCHEMA METADATA
+# Here is where we describe the metadata for the schema
+################################################################################
+
+id: https://example.org/data-sample
+name: data-sample
+title: Mike O'Brien Data Sample Schema
+description: LinkML schema for marine species survey data
+license: https://creativecommons.org/publicdomain/zero/1.0/
+prefixes:
+  linkml: https://w3id.org/linkml/
+  data_sample: https://example.org/data-sample/
+  dwc: http://rs.tdwg.org/dwc/terms/
+default_prefix: data_sample
+imports:
+- linkml:types
+
+################################################################################
+# CLASSES - DATA TABLES
+# Here is where we define the classes, i.e. groupings of slots
+################################################################################
+
+classes:
+  Station:
+    description: Station data
+    close_mappings:
+    - dwc:Event
+    annotations:
+      dwc_target_class: Event
+      transformation_note: Station records map to Darwin Core Event core as point locations; parent deployment/recovery cruise events have footprintWKT
+    slots:
+    - datetime
+    - station
+    - cruise_id
+    - type
+    - depth
+    - wind_speed
+    - wind_dir
+    - wave_height
+    - cloud_cover_10th
+    - ropeless_id
+    - lon_start
+    - lat_start
+    - lon_end
+    - lat_end
+    - notes
+    - participants
+  CPUE:
+    description: CPUE data
+    close_mappings:
+    - dwc:Occurrence
+    annotations:
+      dwc_target_class: Occurrence
+      transformation_note: CPUE records map to Darwin Core Occurrence extension
+    slots:
+    - recover_date
+    - station
+    - pot_position
+    - pot_id
+    - near_far
+    - species
+    - catch
+    - notes
+  Measurements:
+    description: Measurements data
+    close_mappings:
+    - dwc:MeasurementOrFact
+    annotations:
+      dwc_target_class: MeasurementOrFact
+      transformation_note: Measurements pivot to long format for MeasurementOrFact extension
+    slots:
+    - date
+    - station
+    - near_far
+    - species
+    - tl_mm
+    - wt_g_recorded
+    - scale_tare_g
+    - wt_g
+    - sex
+    - retained
+    - barotrauma
+    - notes
+
+################################################################################
+# CLASSES - EVENT HIERARCHY
+# Here is where we define the event structure as classes
+# Event hierarchy: Cruise > Type > Station > Pot > Occurrence
+################################################################################
+
+  Event:
+    description: Base event class
+    abstract: true
+    slots:
+    - event_id
+    - event_date
+    annotations:
+      transformation_note: 'Abstract base class for event hierarchy: Cruise > Type > Station > Pot > Occurrence'
+  Cruise:
+    is_a: Event
+    description: Survey cruise
+    close_mappings:
+    - dwc:Event
+    slots:
+    - cruise_id
+    annotations:
+      dwc_target_class: Event
+      transformation_note: Cruise becomes top-level Event in DwC with eventType='cruise'
+  DeploymentType:
+    is_a: Event
+    description: Deployment or recovery event type
+    close_mappings:
+    - dwc:Event
+    slots:
+    - type
+    - cruise
+    annotations:
+      dwc_target_class: Event
+      transformation_note: Type (deploy/recover) becomes intermediate Event level between Cruise and Station
+  StationVisit:
+    is_a: Event
+    description: Station sampling event
+    close_mappings:
+    - dwc:Event
+    slots:
+    - station_id
+    - deployment_type
+    - location
+    annotations:
+      dwc_target_class: Event
+      transformation_note: StationVisit becomes child Event with parentEventID pointing to DeploymentType
+  PotDeployment:
+    is_a: Event
+    description: Pot/trap deployment
+    close_mappings:
+    - dwc:Event
+    slots:
+    - pot_id
+    - station_visit
+    annotations:
+      dwc_target_class: Event
+      transformation_note: PotDeployment becomes child Event with parentEventID pointing to StationVisit
+  Occurrence:
+    description: Organism occurrence
+    close_mappings:
+    - dwc:Occurrence
+    slots:
+    - occurrence_id
+    - pot_deployment
+    - species
+    annotations:
+      dwc_target_class: Occurrence
+      transformation_note: Occurrence links to PotDeployment Event via eventID
+      occurrence_id_construction: Constructed from station + pot_id + species + row number for uniqueness
+
+################################################################################
+# SLOTS - FIELD DEFINITIONS
+# Here is where we describe the column names from MOB data and conceptually 
+# map them to DwC
+################################################################################
+
+slots:
+  datetime:
+    description: Date for some event (station visit?)
+    range: datetime
+    pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}
+    exact_mappings:
+    - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Direct mapping to eventDate
+    comments:
+    - Must be ISO-8601 formatted
+  station:
+    description: Station identifier
+    range: string
+    exact_mappings:
+    - dwc:eventID
+    - dwc:locationID
+    annotations:
+      transformation_type: direct
+      transformation_note: Station identifier becomes both eventID and locationID
+  cruise_id:
+    description: Cruise identifier
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Cruise ID becomes MeasurementOrFact linked to parent cruise event
+  type:
+    description: Event type (deploy or recover)
+    range: string
+    exact_mappings:
+    - dwc:eventType
+    annotations:
+      transformation_type: direct
+      transformation_note: Type maps directly to eventType
+  depth:
+    description: Depth measurement
+    range: integer
+    unit:
+      ucum_code: m
+      iri: http://qudt.org/vocab/unit/M
+    exact_mappings:
+    - dwc:minimumDepthInMeters
+    - dwc:maximumDepthInMeters
+    annotations:
+      transformation_type: duplicate
+      transformation_note: Single depth value maps to both minimumDepthInMeters and maximumDepthInMeters
+  wind_speed:
+    description: Wind speed measurement
+    range: string
+    unit:
+      ucum_code: '[kn_i]'
+      iri: http://qudt.org/vocab/unit/KN
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wind speed becomes MeasurementOrFact linked to Station eventID
+  wind_dir:
+    description: Wind direction
+    range: CardinalDirection
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wind direction becomes MeasurementOrFact linked to Station eventID
+  wave_height:
+    description: Wave height measurement
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Wave height becomes MeasurementOrFact linked to Station eventID
+  cloud_cover_10th:
+    description: Cloud cover in tenths
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Cloud cover becomes MeasurementOrFact linked to Station eventID
+  ropeless_id:
+    description: Ropeless gear identifier
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Ropeless gear ID becomes MeasurementOrFact linked to Station eventID
+  lon_start:
+    description: Start longitude coordinate
+    range: float
+    minimum_value: -180
+    maximum_value: 180
+    exact_mappings:
+    - dwc:decimalLongitude
+    annotations:
+      transformation_type: direct
+      transformation_note: Start longitude maps to decimalLongitude for Event; also used in footprintWKT
+  lat_start:
+    description: Start latitude coordinate
+    range: float
+    minimum_value: -90
+    maximum_value: 90
+    exact_mappings:
+    - dwc:decimalLatitude
+    annotations:
+      transformation_type: direct
+      transformation_note: Start latitude maps to decimalLatitude for Event; also used in footprintWKT
+  lon_end:
+    description: End longitude coordinate
+    range: float
+    minimum_value: -180
+    maximum_value: 180
+    related_mappings:
+    - dwc:footprintWKT
+    annotations:
+      transformation_type: construct_wkt
+      transformation_note: End longitude used in footprintWKT LINESTRING construction for parent cruise events
+  lat_end:
+    description: End latitude coordinate
+    range: float
+    minimum_value: -90
+    maximum_value: 90
+    related_mappings:
+    - dwc:footprintWKT
+    annotations:
+      transformation_type: construct_wkt
+      transformation_note: End latitude used in footprintWKT LINESTRING construction for parent cruise events
+  notes:
+    description: Notes or remarks
+    range: string
+    close_mappings:
+    - dwc:eventRemarks
+    - dwc:occurrenceRemarks
+    annotations:
+      transformation_type: context_dependent
+      transformation_note: Maps to eventRemarks in Station/Event context, occurrenceRemarks in CPUE/Occurrence context
+  participants:
+    description: Participants
+    range: string
+    exact_mappings:
+    - dwc:recordedBy
+    annotations:
+      transformation_type: direct
+      transformation_note: Participant initials map to recordedBy
+  recover_date:
+    description: Date (recovery of Pot?)
+    range: datetime
+    pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}
+    exact_mappings:
+    - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Recovery date maps to eventDate for Occurrence records
+    comments:
+    - Must be ISO-8601 formatted
+  pot_position:
+    description: Pot position in string (1-15)
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pot position becomes MeasurementOrFact linked to Station or Pot eventID
+  pot_id:
+    description: Pot/trap identifier
+    range: integer
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pot ID becomes MeasurementOrFact; also used in eventID construction
+  near_far:
+    description: Position relative to reference point (near/far)
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Distance category becomes MeasurementOrFact
+  species:
+    description: Species name
+    range: string
+    close_mappings:
+    - dwc:vernacularName
+    related_mappings:
+    - dwc:scientificName
+    annotations:
+      transformation_type: direct
+      transformation_note: Common name maps to vernacularName; scientificName should be looked up from taxonomy
+  catch:
+    description: Catch count
+    range: integer
+    exact_mappings:
+    - dwc:individualCount
+    annotations:
+      transformation_type: direct
+      transformation_note: Catch count maps directly to individualCount
+  date:
+    description: Date or datetime
+    range: datetime
+    exact_mappings:
+    - dwc:eventDate
+    annotations:
+      transformation_type: direct
+      transformation_note: Measurement date - used to link to parent Event
+  tl_mm:
+    description: Length measurement
+    range: integer
+    unit:
+      ucum_code: mm
+      iri: http://qudt.org/vocab/unit/MilliM
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Pivot to MeasurementOrFact with measurementType='total length', measurementValue=TL_mm, measurementUnit='mm'
+  wt_g_recorded:
+    description: Weight measurement (recorded)
+    range: integer
+    unit:
+      ucum_code: g
+      iri: http://qudt.org/vocab/unit/GM
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Recorded weight - may differ from calculated weight, can be separate MeasurementOrFact
+  scale_tare_g:
+    description: Tare weight for scale
+    range: integer
+    unit:
+      ucum_code: g
+      iri: http://qudt.org/vocab/unit/GM
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Tare weight for scale - can be MeasurementOrFact or omitted
+  wt_g:
+    description: Weight measurement (calculated)
+    range: integer
+    unit:
+      ucum_code: g
+      iri: http://qudt.org/vocab/unit/GM
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Calculated weight - pivot to MeasurementOrFact
+  sex:
+    description: Sex of organism
+    range: Sex
+    exact_mappings:
+    - dwc:sex
+    annotations:
+      transformation_type: direct
+      transformation_note: Sex maps directly to dwc:sex
+  retained:
+    description: Whether specimen was retained
+    range: string
+    related_mappings:
+    - dwc:measurementValue
+    annotations:
+      transformation_type: pivot_to_mof
+      transformation_note: Retained status becomes MeasurementOrFact with measurementType='retained'
+  barotrauma:
+    description: Barotrauma observation
+    range: string
+    related_mappings:
+    - dwc:occurrenceRemarks
+    annotations:
+      transformation_type: append
+      transformation_note: Barotrauma observation should be appended to occurrenceRemarks
+
+################################################################################
+# ENUMS - CONTROLLED VOCABULARIES
+# Here is where we define the enums (factor levels) that are needed
+################################################################################
+
+enums:
+  CardinalDirection:
+    permissible_values:
+      N:
+        description: North
+      S:
+        description: South
+      E:
+        description: East
+      W:
+        description: West
+      NE:
+        description: Northeast
+      NW:
+        description: Northwest
+      SE:
+        description: Southeast
+      SW:
+        description: Southwest
+  Sex:
+    permissible_values:
+      F:
+        description: Female
+      M:
+        description: Male

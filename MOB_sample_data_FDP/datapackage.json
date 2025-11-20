@@ -1,0 +1,211 @@
+{
+  "profile": "tabular-data-package",
+  "name": "data-sample",
+  "title": "Data Sample",
+  "resources": [
+    {
+      "name": "station",
+      "path": "Station.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "datetime",
+            "type": "datetime",
+            "description": "Date/time"
+          },
+          {
+            "name": "station",
+            "type": "string",
+            "description": "Station identifier"
+          },
+          {
+            "name": "cruise_id",
+            "type": "string",
+            "description": "Cruise Identifier"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Type"
+          },
+          {
+            "name": "depth",
+            "type": "integer",
+            "description": "Depth measurement"
+          },
+          {
+            "name": "wind_speed",
+            "type": "string",
+            "description": "Wind Speed"
+          },
+          {
+            "name": "wind_dir",
+            "type": "string",
+            "description": "Wind Direction"
+          },
+          {
+            "name": "wave_height",
+            "type": "string",
+            "description": "Wave Height"
+          },
+          {
+            "name": "cloud_cover_10th",
+            "type": "integer",
+            "description": "Cloud Cover 10Th"
+          },
+          {
+            "name": "ropeless_id",
+            "type": "string",
+            "description": "Ropeless Identifier"
+          },
+          {
+            "name": "lon_start",
+            "type": "number",
+            "description": "Start Longitude"
+          },
+          {
+            "name": "lat_start",
+            "type": "number",
+            "description": "Start Latitude"
+          },
+          {
+            "name": "lon_end",
+            "type": "number",
+            "description": "End Longitude"
+          },
+          {
+            "name": "lat_end",
+            "type": "number",
+            "description": "End Latitude"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Notes"
+          },
+          {
+            "name": "participants",
+            "type": "string",
+            "description": "Participants"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cpue",
+      "path": "CPUE.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Recover_date",
+            "type": "datetime",
+            "description": "Date/time"
+          },
+          {
+            "name": "Station",
+            "type": "string",
+            "description": "Station identifier"
+          },
+          {
+            "name": "Pot_position",
+            "type": "integer",
+            "description": "Pot Position"
+          },
+          {
+            "name": "Pot_ID",
+            "type": "integer",
+            "description": "Pot Identifier"
+          },
+          {
+            "name": "Near_Far",
+            "type": "string",
+            "description": "?"
+          },
+          {
+            "name": "Species",
+            "type": "string",
+            "description": "Species name"
+          },
+          {
+            "name": "Catch",
+            "type": "integer",
+            "description": "Catch"
+          },
+          {
+            "name": "Notes",
+            "type": "string",
+            "description": "Notes"
+          }
+        ]
+      }
+    },
+    {
+      "name": "measurements",
+      "path": "Measurements.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "datetime",
+            "description": "Date/time"
+          },
+          {
+            "name": "Station",
+            "type": "string",
+            "description": "Station identifier"
+          },
+          {
+            "name": "Near/Far",
+            "type": "string",
+            "description": "?"
+          },
+          {
+            "name": "Species",
+            "type": "string",
+            "description": "Species name"
+          },
+          {
+            "name": "TL_mm",
+            "type": "integer",
+            "description": "Length measurement"
+          },
+          {
+            "name": "Wt_g_recorded",
+            "type": "integer",
+            "description": "Weight measurement"
+          },
+          {
+            "name": "scale_tare_g",
+            "type": "integer",
+            "description": "Weight measurement"
+          },
+          {
+            "name": "Wt_g",
+            "type": "integer",
+            "description": "Weight measurement"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "description": "Sex"
+          },
+          {
+            "name": "Retained",
+            "type": "string",
+            "description": "Retained"
+          },
+          {
+            "name": "Barotrauma",
+            "type": "string",
+            "description": "Barotrauma"
+          },
+          {
+            "name": "Notes",
+            "type": "string",
+            "description": "Notes"
+          }
+        ]
+      }
+    }
+  ]
+}

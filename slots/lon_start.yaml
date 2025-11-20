@@ -1,0 +1,12 @@
+lon_start:
+  description: Start longitude coordinate
+  range: float
+  minimum_value: -180
+  maximum_value: 180
+  exact_mappings:
+  - dwc:decimalLongitude
+  annotations:
+    transformation_type: direct
+    transformation_note: Start longitude maps to decimalLongitude for Event; also used in footprintWKT
+  comments:
+    - assuming these are decimal degrees in WGS84

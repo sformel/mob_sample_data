@@ -1,0 +1,10 @@
+Barotrauma:
+  description: Barotrauma observation
+  range: string
+  related_mappings:
+  - dwc:occurrenceRemarks
+  annotations:
+    transformation_type: append
+    transformation_note: Barotrauma observation should be appended to occurrenceRemarks
+  comments:
+    - "Barotrauma started being recorded on the 2306 cruise, as some fish with everted stomachs would have false-empty stomachs"

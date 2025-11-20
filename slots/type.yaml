@@ -1,0 +1,8 @@
+type:
+  description: Event type (deploy or recover)
+  range: DeploymentType
+  exact_mappings:
+  - dwc:eventType
+  annotations:
+    transformation_type: direct
+    transformation_note: Type maps directly to eventType

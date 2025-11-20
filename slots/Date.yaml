@@ -1,0 +1,13 @@
+Date:
+  description: Date of animal measurements
+  range: datetime
+  pattern: ^\d{4}-\d{2}-\d{2}
+  exact_mappings:
+  - dwc:eventDate
+  annotations:
+    transformation_type: direct
+    transformation_note: Measurement date - used to link to parent Event
+  alias:
+    - Date
+  comments:
+    - Must be ISO-8601 formatted, like YYYY-mm-DD

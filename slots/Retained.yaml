@@ -1,0 +1,8 @@
+Retained:
+  description: Whether specimen was retained
+  range: RetainedEnum
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: Retained status becomes MeasurementOrFact with measurementType='retained'

@@ -1,0 +1,10 @@
+Near_Far:
+  description: Position relative to reference point (near/far)
+  range: string
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: Distance category becomes MeasurementOrFact
+  alias:
+    - "Near/Far"

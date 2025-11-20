@@ -1,0 +1,72 @@
+
+################################################################################
+# CLASSES - DATA TABLES
+# Here is where we define the classes, i.e. groupings of slots
+################################################################################
+
+classes:
+  Station:
+    description: Station tab in google sheet
+    close_mappings:
+    - dwc:Event
+    annotations:
+      dwc_target_class: Event
+      transformation_note: Station records map to Darwin Core Event core as point locations; parent deployment/recovery cruise events have footprintWKT
+    slots:
+    - datetime
+    - station
+    - cruise_id
+    - type
+    - depth
+    - wind_speed
+    - wind_dir
+    - wave_height
+    - cloud_cover_10th
+    - ropeless_id
+    - hobo_id
+    - surf_temp_f
+    - lon_start
+    - lat_start
+    - lon_end
+    - lat_end
+    - notes
+    - participants
+    - old_station
+  CPUE:
+    description: CPUE tab in google sheet
+    close_mappings:
+    - dwc:Occurrence
+    annotations:
+      dwc_target_class: Occurrence
+      transformation_note: CPUE records map to Darwin Core Occurrence extension
+    slots:
+    - Recover_date
+    - station
+    - Pot_position
+    - Pot_ID
+    - Near_Far
+    - Species
+    - Catch
+    - notes
+    - old_station
+  Measurements:
+    description: Measurements tab in google sheets
+    close_mappings:
+    - dwc:MeasurementOrFact
+    annotations:
+      dwc_target_class: MeasurementOrFact
+      transformation_note: Measurements pivot to long format for MeasurementOrFact extension
+    slots:
+    - Date
+    - station
+    - Near_Far
+    - Species
+    - TL_mm
+    - Wt_g_recorded
+    - scale_tare_g
+    - Wt_g
+    - Sex
+    - Retained
+    - Barotrauma
+    - notes
+    - old_station

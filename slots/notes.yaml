@@ -1,0 +1,11 @@
+notes:
+  description: Notes or remarks
+  range: string
+  close_mappings:
+  - dwc:eventRemarks
+  - dwc:occurrenceRemarks
+  annotations:
+    transformation_type: context_dependent
+    transformation_note: Maps to eventRemarks in Station/Event context, occurrenceRemarks in CPUE/Occurrence context
+  alias:
+    - Notes

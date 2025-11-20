@@ -1,0 +1,15 @@
+surf_temp_f:
+  description: Surface temperature in Fahrenheit
+  range: float
+  pattern: "^(2[6-9]|[3-9]\\d|1\\d{2})(\\.\\d+)?$"
+  minimum_value: 30
+  maximum_value: 110
+  unit:
+    ucum_code: "[degF]"
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: Surface temperature becomes MeasurementOrFact linked to Station eventID
+  comments:
+    - pattern assumes number between 30 - 110 with an option to specify the tenths place.

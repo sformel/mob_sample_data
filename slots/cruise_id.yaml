@@ -1,0 +1,18 @@
+cruise_id:
+  description: Cruise identifier
+  range: string
+  pattern: "^\\d{4}(_\\d)?$"
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: Cruise ID becomes MeasurementOrFact linked to parent cruise event
+  comments:
+    - "Appears to be in YYMM or YYMM_N format (year-month with optional cruise number). Pattern is based on this assumption."
+  examples:
+    - value: "2206"
+      description: June 2022 cruise
+    - value: "2306_2"
+      description: June 2023, second cruise
+    - value: "2410"
+      description: October 2024 cruise

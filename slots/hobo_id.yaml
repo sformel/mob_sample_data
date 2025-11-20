@@ -1,0 +1,10 @@
+hobo_id:
+  description: HOBO data logger identifier
+  range: string
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: HOBO logger ID becomes MeasurementOrFact linked to Station eventID
+  comments:
+    - assuming this is a data logger

@@ -1,0 +1,12 @@
+Species:
+  description: Species name
+  range: string
+  close_mappings:
+  - dwc:vernacularName
+  related_mappings:
+  - dwc:scientificName
+  annotations:
+    transformation_type: direct
+    transformation_note: Common name maps to vernacularName; scientificName should be looked up from taxonomy
+  comments:
+    - not clear what values are permissible or where they're defined

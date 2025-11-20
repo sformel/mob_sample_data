@@ -1,0 +1,30 @@
+station:
+  alias:
+    - Station
+  description: >-
+    Station identifier for ocean sampling locations. Format evolved over time:
+    - Pre-2024: Cruise-based (C####-#), grid coordinates, or A-series
+    - 2024+: USWind convention (U[Letter]-##)
+  range: string
+  pattern: "^(U[A-Z]-\\d{2}|C\\d{4}[-_]\\d(-\\d)?|[A-Z]\\d{1,2}|A-\\d-\\d)$"
+  examples:
+    - value: UM-15
+      description: Current USWind format (2024+)
+    - value: C2411-2
+      description: Cruise format from 2024 season
+    - value: L12
+      description: Grid coordinate format
+  comments:
+    - "MOB-developed naming convention for turbine sites; not reported after 2022-08-03 cruise"	
+    - "A/B/C - buildout zone"
+    - "first number: column from east to west"
+    - "second number: row from north to south"
+    - "Changed on 2022-08-15 after learning of USWind convention"
+    - "Changed in 2024 season after new USW convention"
+    - "Switched from using underscores to dashes after 2022-09-01, as the GPS does not read underscores"
+  exact_mappings:
+  - dwc:eventID
+  - dwc:locationID
+  annotations:
+    transformation_type: direct
+    transformation_note: Station identifier becomes both eventID and locationID

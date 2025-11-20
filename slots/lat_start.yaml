@@ -1,0 +1,12 @@
+lat_start:
+  description: Start latitude coordinate
+  range: float
+  minimum_value: -90
+  maximum_value: 90
+  exact_mappings:
+  - dwc:decimalLatitude
+  annotations:
+    transformation_type: direct
+    transformation_note: Start latitude maps to decimalLatitude for Event; also used in footprintWKT
+  comments:
+    - assuming these are decimal degrees in WGS84

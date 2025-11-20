@@ -1,0 +1,12 @@
+lon_end:
+  description: End longitude coordinate
+  range: float
+  minimum_value: -180
+  maximum_value: 180
+  related_mappings:
+  - dwc:footprintWKT
+  annotations:
+    transformation_type: construct_wkt
+    transformation_note: End longitude used in footprintWKT LINESTRING construction for parent cruise events
+  comments:
+    - assuming these are decimal degrees in WGS84

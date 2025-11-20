@@ -1,0 +1,24 @@
+old_station:
+  description: >-
+      Legacy station identifier. Multiple naming conventions used:
+      - MOB turbine sites (discontinued after 2022-08-03)
+      - Early USWind convention with underscores (2022-08-15 to 2022-09-01)
+      - USWind convention with hyphens (2022-09-01 to 2024)
+      Note: Underscores avoided after 2022-09-01 due to GPS compatibility
+  range: string
+  pattern: "^(C\\d{4}[-_]\\d(-\\d)?|[A-Z]\\d{1,2}|A-\\d-\\d)$"
+  examples:
+        - value: C2206_1
+          description: Early format with underscore
+        - value: A-7-6
+          description: A-series format
+  comments:
+    - "MOB-developed naming convention for turbine sites; not reported after 2022-08-03 cruise"	
+    - "A/B/C - buildout zone"
+    - "first number: column from east to west"
+    - "second number: row from north to south"
+    - "Changed on 2022-08-15 after learning of USWind convention"
+    - "Changed in 2024 season after new USW convention"
+    - "Switched from using underscores to dashes after 2022-09-01, as the GPS does not read underscores"
+  alias:
+    - Old_Station

@@ -1,0 +1,11 @@
+participants:
+  description: Participants. Crew members present during sampling (comma-separated).
+  range: participantEnum
+  multivalued: true
+  exact_mappings:
+  - dwc:recordedBy
+  annotations:
+    transformation_type: direct
+    transformation_note: Participant initials map to recordedBy
+  comments:
+    - inclusion of 'multivalued' alllows for the comma separation

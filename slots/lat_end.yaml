@@ -1,0 +1,12 @@
+lat_end:
+  description: End latitude coordinate
+  range: float
+  minimum_value: -90
+  maximum_value: 90
+  related_mappings:
+  - dwc:footprintWKT
+  annotations:
+    transformation_type: construct_wkt
+    transformation_note: End latitude used in footprintWKT LINESTRING construction for parent cruise events
+  comments:
+    - assuming these are decimal degrees in WGS84

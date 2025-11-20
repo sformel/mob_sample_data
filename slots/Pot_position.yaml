@@ -1,0 +1,8 @@
+Pot_position:
+  description: Pot position in string (1-15)
+  range: integer
+  related_mappings:
+  - dwc:measurementValue
+  annotations:
+    transformation_type: pivot_to_mof
+    transformation_note: Pot position becomes MeasurementOrFact linked to Station or Pot eventID

@@ -1,0 +1,99 @@
+################################################################################
+# ENUMS - CONTROLLED VOCABULARIES
+# Here is where we define the enums (factor levels) that are needed
+################################################################################
+
+enums:
+  CardinalDirection:
+    permissible_values:
+      N:
+        description: North
+      S:
+        description: South
+      E:
+        description: East
+      W:
+        description: West
+      NE:
+        description: Northeast
+      NW:
+        description: Northwest
+      SE:
+        description: Southeast
+      SW:
+        description: Southwest
+  SexEnum:
+    permissible_values:
+      F:
+        description: Female
+      M:
+        description: Male
+
+  participantEnum:
+    description: Personnel involved in ocean sampling operations
+    permissible_values:
+      DS:
+        description: Dave Secor
+        title: Dave Secor
+      MOB:
+        description: Mike O'Brien
+        title: Mike O'Brien
+      KS:
+        description: Kirsten Silva
+        title: Kirsten Silva
+      EK:
+        description: Evan Kostelecky
+        title: Evan Kostelecky
+      LR:
+        description: Lauren Rodriguez
+        title: Lauren Rodriguez
+      KH:
+        description: Kerry Harrington
+        title: Kerry Harrington
+      BH:
+        description: Brandon Harrington
+        title: Brandon Harrington
+      Jm:
+        description: Jeff (mate)
+        title: Jeff (mate)
+      Rm:
+        description: Reilly (mate)
+        title: Reilly (mate)
+      Lm:
+        description: Lucas (mate)
+        title: Lucas (mate)
+      Wm:
+        description: Will (mate)
+        title: Will (mate)
+      ENm:
+        description: Ethan N (mate)
+        title: Ethan N (mate)
+      Cm:
+        description: Conor (mate)
+        title: Conor (mate)
+      KB:
+        description: KB (mate/captain)
+        title: KB (mate/captain)
+      RA:
+        description: Reece Aponte (VIMS)
+        title: Reece Aponte (VIMS)
+
+  DeploymentType:
+    description: Type of sampling event - deployment or recovery of gear
+    permissible_values:
+      deploy:
+        description: Deployment of sampling gear
+        title: Deploy
+      recover:
+        description: Recovery of sampling gear
+        title: Recover
+  
+  RetainedEnum:
+    description: Whether specimen was retained
+    permissible_values:
+      Y:
+        description: Yes, specimen was retained
+        title: Yes
+      N:
+        description: No, specimen was not retained
+        title: No

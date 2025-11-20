@@ -1,0 +1,20 @@
+################################################################################
+# SCHEMA METADATA
+# Here is where we describe the metadata for the schema
+################################################################################
+
+id: https://example.org/umces
+name: data-sample
+title: UMCES Raw Pot Survey Data Schema
+description: |
+   LinkML schema for marine species survey data shared via Google Drive:
+   https://docs.google.com/spreadsheets/d/1yY2hdD4Hoh3hbieIyu9Lsm_nq7sKyC08
+license: TBD
+prefixes:
+  linkml: https://w3id.org/linkml/
+  umces: https://example.org/umces/
+  dwc: http://rs.tdwg.org/dwc/terms/
+default_prefix: umces
+imports:
+- linkml:types
+- linkml:units

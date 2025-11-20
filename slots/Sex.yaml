@@ -1,0 +1,8 @@
+Sex:
+  description: Sex of organism
+  range: SexEnum
+  exact_mappings:
+  - dwc:sex
+  annotations:
+    transformation_type: direct
+    transformation_note: Sex maps directly to dwc:sex

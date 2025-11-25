@@ -4,6 +4,12 @@
 ################################################################################
 
 enums:
+  CatchNA:
+    permissible_values:
+      NA:
+        description: Pot was empty (zero catch)
+        meaning: NCIT:C48660
+        
   CardinalDirection:
     permissible_values:
       N:

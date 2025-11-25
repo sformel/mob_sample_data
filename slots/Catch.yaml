@@ -1,10 +1,11 @@
 Catch:
-  description: Catch count
-  range: integer
+  description: |
+    Catch count. Accepts integer values or "NA" (pot was empty).
+  any_of:
+    - range: integer
+    - range: CatchNA
   exact_mappings:
-  - dwc:individualCount
+    - dwc:individualCount
   annotations:
     transformation_type: direct
     transformation_note: Catch count maps directly to individualCount
-  comments:
-    - "TODO: Clarify meaning of NA values - could indicate: no catch (0), not recorded, or not applicable"

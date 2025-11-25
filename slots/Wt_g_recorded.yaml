@@ -1,6 +1,8 @@
 Wt_g_recorded:
   description: Weight measurement (recorded)
-  range: integer
+  any_of:
+    - range: float
+    - range: NotRecorded
   unit:
     ucum_code: g
   related_mappings:
@@ -8,5 +10,3 @@ Wt_g_recorded:
   annotations:
     transformation_type: pivot_to_mof
     transformation_note: Recorded weight - may differ from calculated weight, can be separate MeasurementOrFact
-  comments:
-    - not clear what NA values signify

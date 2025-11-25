@@ -4,12 +4,18 @@
 ################################################################################
 
 enums:
+  NotRecorded:
+    permissible_values:
+      NA:
+        description: Value was not recorded
+        meaning: NCIT:C17998  # "Unknown" or use another appropriate term
+        
   CatchNA:
     permissible_values:
       NA:
         description: Pot was empty (zero catch)
         meaning: NCIT:C48660
-        
+
   CardinalDirection:
     permissible_values:
       N:

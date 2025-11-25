@@ -14,6 +14,7 @@ prefixes:
   linkml: https://w3id.org/linkml/
   umces: https://example.org/umces/
   dwc: http://rs.tdwg.org/dwc/terms/
+  s10: http://vocab.nerc.ac.uk/collection/S10/current/
 default_prefix: umces
 imports:
 - linkml:types

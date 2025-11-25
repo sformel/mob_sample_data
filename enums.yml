@@ -35,11 +35,17 @@ enums:
       SW:
         description: Southwest
   SexEnum:
+    description: "Sex categories from NERC S10 vocabulary (a subset)."
     permissible_values:
       F:
-        description: Female
+        meaning: s10:S102
+        description: "Female"  
+      I:
+        meaning: s10:S105
+        description: "Indeterminate"  
       M:
-        description: Male
+        meaning: s10:S103
+        description: "Male" 
 
   participantEnum:
     description: Personnel involved in ocean sampling operations

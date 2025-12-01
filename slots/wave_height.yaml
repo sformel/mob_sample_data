@@ -1,6 +1,8 @@
 wave_height:
-  description: Wave height measurement
+  description: Estimated wave height in feet, measured from trough to crest.
   range: string
+  unit:
+    ucum_code: "[ft_i]"
   related_mappings:
   - dwc:measurementValue
   annotations:
@@ -17,5 +19,3 @@ wave_height:
       description: 5.5
     - value: "3"
       description: 3
-  comments:
-    - units unknown

@@ -1,12 +1,12 @@
 TL_mm:
-  description: Length measurement (Total length?)
+  description: Total length in millimeters. The tip of the snout in a straight line to the posterior end of the caudal fin. 
   range: integer
   unit:
     ucum_code: mm
+  exact_mappings:
+    - P01:TL01XX01
   related_mappings:
   - dwc:measurementValue
   annotations:
     transformation_type: pivot_to_mof
     transformation_note: Pivot to MeasurementOrFact with measurementType='total length', measurementValue=TL_mm, measurementUnit='mm'
-  comments:
-    - not clear what measurement method is

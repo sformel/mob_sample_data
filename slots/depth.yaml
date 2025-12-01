@@ -1,13 +1,14 @@
 depth:
-  description: Depth measurement
+  description: Depth measurement in feet.
   range: float
   pattern: "^\\d+(\\.\\d)?$"
+  unit:
+    ucum_code: "[ft_i]"
   close_mappings:
   - dwc:minimumDepthInMeters
   - dwc:maximumDepthInMeters
   annotations:
     transformation_type: duplicate
-    transformation_note: Single depth value maps to both minimumDepthInMeters and maximumDepthInMeters after ensuring units are meters.
+    transformation_note: Single depth value maps to both minimumDepthInMeters and maximumDepthInMeters after converting from feet to meters.
   comments:
-    - units unknown
     - pattern assumes positive number with an option to specify the tenths place.
